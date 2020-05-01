@@ -1,0 +1,74 @@
+﻿<Window x:Class="IX.UI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:IX.UI"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel>
+
+        <ToolBar Header="Bar" Name="barDemo">
+            <Button Content="1"/>
+            <Button Content="2"/>
+            <Button Content="3"/>
+            <Button Content="4"/>
+            <Button Content="5"/>            
+        </ToolBar>
+
+        <ToolBarTray>
+            <ToolBar Header="Bar2" >
+                <Button Content="1"/>
+                <Button Content="2"/>
+                <Button Content="3"/>
+                <Button Content="4"/>
+                <Button Content="5"/>
+            </ToolBar>
+
+            <ToolBar Header="Bar3" >
+                <Button Content="1"/>
+                <Button Content="2"/>
+                <Button Content="3"/>
+                <Button Content="4"/>
+                <Button Content="5"/>
+            </ToolBar>
+        </ToolBarTray>
+        
+        <TabControl x:Name="tabDemo" SelectedIndex="1">
+            <TabItem Header="Group box">
+                <GroupBox Background="AliceBlue">
+                    <GroupBox.Header>
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="C:\\Users\\Sunil\\Desktop\\Unity\\01 IX\\IX 2D app\\Image\\imageicon.png"/>
+                            <Label Content="Image Icon"/>
+                        </StackPanel>
+                    </GroupBox.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <RadioButton Margin="3" Content="Green"/>
+                        <RadioButton Margin="3" Content="Blue"/>
+                        <RadioButton Margin="3" Content="Black"/>
+                        <RadioButton Margin="3" Content="Red"/>
+                    </StackPanel>
+                </GroupBox>
+            </TabItem>
+            <TabItem Header="Image Icon">
+
+                <Expander IsExpanded="True" ExpandDirection="Down" Background="AliceBlue">
+                    <Expander.Header>
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="C:\\Users\\Sunil\\Desktop\\Unity\\01 IX\\IX 2D app\\Image\\imageicon.png"/>
+                            <Label Content="Image Icon"/>
+                        </StackPanel>
+                    </Expander.Header>
+                    <StackPanel>
+                        <RadioButton Margin="3" Content="Green"/>
+                        <RadioButton Margin="3" Content="Blue"/>
+                        <RadioButton Margin="3" Content="Black"/>
+                        <RadioButton Margin="3" Content="Red"/>
+                    </StackPanel>
+                </Expander>
+            </TabItem>
+        </TabControl>
+
+    </StackPanel>
+</Window>
